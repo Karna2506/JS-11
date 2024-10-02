@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Task 8: Create a Description List
+Objective: Create a description list (<dl>) with three terms and their corresponding descriptions.
+Instructions:
+Use createElement to create a <dl>.
+Create three pairs of <dt> (term) and <dd> (description) elements.
+Append the terms and descriptions to the description list, and then append the list to the body. -->
+
+
+    <script>
+
+        let dl = document.createElement("dl");
+        let dt = document.createElement("dt");
+        let dd = document.createElement("dd")
+
+        dt.innerText = "Krishna"
+        dd.innerText = 'An avatar of Vishnu and a key advisor in the Mahabharata.';
+
+        dl.appendChild(dt);
+        dl.appendChild(dd);
+
+        document.body.appendChild(dl)
+
+
+    </script>
+</body>
+</html>

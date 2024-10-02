@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Task 6: Create a Nested Ordered List
+Objective: Create an ordered list (<ol>) 
+    where the second item contains a nested ordered list with two items.
+Instructions:
+Use createElement to create the main <ol> and list items.
+Add a nested <ol> to the second list item.
+Append the main and nested lists to the body. -->
+
+    <script>
+
+       let ol1 = document.createElement("ol");
+       let ol2 = document.createElement("ol");
+
+       let li1 = document.createElement("li");
+       let li2 = document.createElement("li")
+       let li3 = document.createElement("li")
+       let li4 = document.createElement("li")
+
+       
+       li1.innerText = "Arjun"
+       li2.innerText = "Karna"
+        
+       li3.innerText = "Malli"
+       li4.innerText = "Reddy"
+
+
+       ol2.appendChild(li3)
+       ol2.appendChild(li4)
+
+       li1.appendChild(ol2)
+
+       ol1.appendChild(li1)
+       ol1.appendChild(li2)
+
+       document.body.appendChild(ol1)
+
+
+
+    </script>
+
+    
+</body>
+</html>

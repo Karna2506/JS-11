@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Task 10: Create a Div with Multiple Paragraphs
+Objective: Create a div containing three different paragraphs (<p>), each with different text.
+Instructions:
+Use createElement to create a <div> and three <p> elements.
+Set the text for each paragraph.
+Append all paragraphs to the div, then append the div to the body.
+ -->
+
+<script>
+    let div = document.createElement("div");
+    let p1 = document.createElement("p1");
+    let p2 = document.createElement("p2");
+    let p3 = document.createElement("p3");
+
+    p1.textContent  = "10000 Coders"
+    p2.textContent =  "Full-Stack Course"
+    p3.textContent = "Arjun"
+
+    div.appendChild(p1)
+    div.appendChild(p2)
+    div.appendChild(p3)
+
+    document.body.appendChild(div)
+</script>
+
+</body>
+</html>

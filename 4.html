@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,tr,th,td{
+            border: 1px solid;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <script>
+
+        let table = document.createElement("table")
+        let row1 = document.createElement("tr")
+        let row2 = document.createElement("tr")
+        let row3 = document.createElement("tr")
+
+
+        let head1 = document.createElement("th")
+        let head2 = document.createElement("th")
+        let td1 = document.createElement("td")
+        let td2 = document.createElement("td")
+        let td3 = document.createElement("td")
+        let td4 = document.createElement("td")
+
+        head1.innerText = "Name";
+        head2.innerText = "Age";
+        td1.innerText = "Karna ";
+        td2.innerText = "25";
+        td3.innerText = "Arjun";
+        td4.innerText = "22";
+
+        row1.appendChild(head1)
+        row1.appendChild(head2)
+        row2.appendChild(td1);
+        row2.appendChild(td2);
+        row3.appendChild(td3);
+        row3.appendChild(td4);
+
+
+        table.appendChild(row1);
+        table.appendChild(row2);
+        table.appendChild(row3);
+
+
+        document.body.appendChild(table);
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Task 9: Create a Blockquote Inside a Div
+Objective: Create a div that contains a blockquote (<blockquote>) with some text.
+Instructions:
+Use createElement to create a <div> and <blockquote>.
+Set the text inside the blockquote.
+Append the blockquote to the div, and append the div to the body. -->
+
+<script>
+
+
+    let div = document.createElement("div");
+    let blockquote = document.createElement("blockquote");
+
+    // blockquote.innerHTML = '"<blockquote> JavaScript is a single-threaded & synchronous Language </blockquote>"';
+
+    blockquote.innerText = '" JavaScript is a single-threaded & synchronous Language "';
+
+    div.appendChild(blockquote);
+    document.body.appendChild(div);
+
+</script>
+
+</body>
+</html>

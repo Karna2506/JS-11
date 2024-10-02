@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let list = document.createElement("ul")
+        let list1 = document.createElement("li")
+        let list2 = document.createElement("li")
+        let list3 = document.createElement("li")
+
+        list.innerHTML = "unordered list";
+        list1.innerText = "javascript";
+        list2.innerText = "css";
+        list3.innerText = "html";
+ 
+        list.appendChild(list1);
+        list.appendChild(list2);
+        list.appendChild(list3);
+
+        document.body.appendChild(list)
+    </script>
+
+
+</body>
+</html>

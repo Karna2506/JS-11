@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Task 7: Create a Section with a Heading and Paragraph
+Objective: Create a section that contains a heading and a paragraph with different text.
+Instructions:
+Use createElement to create a <section>, <h2>, and <p>.
+Set the text for the heading and paragraph.
+Append them to the section, and then append the section to the body. -->
+
+    <script>
+
+        let section = document.createElement("section");
+        let h2 = document.createElement("h2");
+        let p = document.createElement("p");
+
+        h2.innerText = "Karna";
+        p.innerText = "Karna is powerful warrior in Mahabharata";
+
+        section.appendChild(h2);
+        section.appendChild(p);
+
+        document.body.appendChild(section)
+
+    </script>
+</body>
+</html>

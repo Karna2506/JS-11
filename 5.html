@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        
+        
+        img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+        p{
+            color: brown;
+        }
+    
+    </style>
+</head>
+<body>
+    
+    <script>
+        let div = document.createElement("div")
+        let p = document.createElement("p")
+        let img = document.createElement("img")
+    
+
+        img.src = "javascript.jpg ";
+
+        p.innerHTML = "<h1>Java Script</h1>";
+
+        div.appendChild(p);
+        div.appendChild(img);
+
+        document.body.appendChild(div)
+
+
+    
+        
+    </script>
+</body>
+</html>
